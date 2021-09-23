@@ -1,0 +1,12 @@
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL] Mysqli_query failed.
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL]  Query Failed: SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0: MySQL error 1146: Table 'custommodule.currencies' doesn't exist
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL] Mysqli_query failed.
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL]  Query Failed: SELECT * FROM fields_meta_data WHERE  custom_module='Users' AND  deleted = 0: MySQL error 1146: Table 'custommodule.fields_meta_data' doesn't exist
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL] Mysqli_query failed.
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL]  Query Failed: SELECT * FROM fields_meta_data WHERE  custom_module='Employees' AND  deleted = 0: MySQL error 1146: Table 'custommodule.fields_meta_data' doesn't exist
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL] Mysqli_query failed.
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL]  Query Failed: SELECT * FROM fields_meta_data WHERE  custom_module='UserPreferences' AND  deleted = 0: MySQL error 1146: Table 'custommodule.fields_meta_data' doesn't exist
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL] Mysqli_query failed.
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL]  Query Failed: SELECT * FROM fields_meta_data WHERE  custom_module='Administration' AND  deleted = 0: MySQL error 1146: Table 'custommodule.fields_meta_data' doesn't exist
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL] Mysqli_query failed.
+Thu Sep 23 18:03:12 2021 [13512][-none-][FATAL] Unable to retrieve system settings Query Failed: SELECT category, name, value FROM config: MySQL error 1146: Table 'custommodule.config' doesn't exist
