@@ -14321,6 +14321,109 @@
       ),
     ),
   ),
+  'ht_bye_bye_modified_user' => 
+  array (
+    'name' => 'ht_bye_bye_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ht_bye_bye',
+    'rhs_table' => 'accounts',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'ht_bye_bye_created_by' => 
+  array (
+    'name' => 'ht_bye_bye_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ht_bye_bye',
+    'rhs_table' => 'accounts',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'ht_bye_bye_assigned_user' => 
+  array (
+    'name' => 'ht_bye_bye_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ht_bye_bye',
+    'rhs_table' => 'accounts',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'securitygroups_ht_bye_bye' => 
+  array (
+    'name' => 'securitygroups_ht_bye_bye',
+    'lhs_module' => 'SecurityGroups',
+    'lhs_table' => 'securitygroups',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ht_bye_bye',
+    'rhs_table' => 'accounts',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'securitygroups_records',
+    'join_key_lhs' => 'securitygroup_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ht_bye_bye',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'char',
+        'len' => '36',
+        'required' => true,
+        'default' => '',
+      ),
+      1 => 
+      array (
+        'name' => 'securitygroup_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      2 => 
+      array (
+        'name' => 'record_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      3 => 
+      array (
+        'name' => 'module',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'modified_user_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      6 => 
+      array (
+        'name' => 'created_by',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      7 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'required' => true,
+        'default' => '0',
+      ),
+    ),
+  ),
   'asdas_ht_hello_modified_user' => 
   array (
     'name' => 'asdas_ht_hello_modified_user',
@@ -14369,6 +14472,109 @@
     'join_key_rhs' => 'record_id',
     'relationship_role_column' => 'module',
     'relationship_role_column_value' => 'asdas_ht_hello',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'char',
+        'len' => '36',
+        'required' => true,
+        'default' => '',
+      ),
+      1 => 
+      array (
+        'name' => 'securitygroup_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      2 => 
+      array (
+        'name' => 'record_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      3 => 
+      array (
+        'name' => 'module',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'modified_user_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      6 => 
+      array (
+        'name' => 'created_by',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      7 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'required' => true,
+        'default' => '0',
+      ),
+    ),
+  ),
+  'asdas_ht_xero_sync_modified_user' => 
+  array (
+    'name' => 'asdas_ht_xero_sync_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'asdas_ht_xero_sync',
+    'rhs_table' => 'asdas_ht_xero_sync',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'asdas_ht_xero_sync_created_by' => 
+  array (
+    'name' => 'asdas_ht_xero_sync_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'asdas_ht_xero_sync',
+    'rhs_table' => 'asdas_ht_xero_sync',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'asdas_ht_xero_sync_assigned_user' => 
+  array (
+    'name' => 'asdas_ht_xero_sync_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'asdas_ht_xero_sync',
+    'rhs_table' => 'asdas_ht_xero_sync',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'securitygroups_asdas_ht_xero_sync' => 
+  array (
+    'name' => 'securitygroups_asdas_ht_xero_sync',
+    'lhs_module' => 'SecurityGroups',
+    'lhs_table' => 'securitygroups',
+    'lhs_key' => 'id',
+    'rhs_module' => 'asdas_ht_xero_sync',
+    'rhs_table' => 'asdas_ht_xero_sync',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'securitygroups_records',
+    'join_key_lhs' => 'securitygroup_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'asdas_ht_xero_sync',
     'fields' => 
     array (
       0 => 
